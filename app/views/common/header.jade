@@ -1,0 +1,54 @@
+#header
+  h1 I'm header
+#nav
+  ul.navigation
+    li
+      a.navigation-item(href='/') 首页
+    li
+      .expand
+        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-intro')医院介绍
+        #hospital-intro.expand-menu.hide
+          a(href='#') 印象锦江
+          a(href='#') 院长致辞
+          a(href='#') 医院大事记
+          a(href='#') 医院环境
+          a(href='#') 高端设备
+          a(href='#') 产科资讯
+          a(href='#') 新闻资讯
+    li
+      .expand
+        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-dept') 科室设置
+        #hospital-dept.expand-menu.hide
+          a(href='#') 产科中心
+          a(href='#') 妇科中心
+          a(href='#') 不孕不育中心
+          a(href='#') 新生儿科中心
+          a(href='#') 计划生育中心
+    li
+      .expand
+        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-team') 医疗团队
+        #hospital-team.expand-menu.hide
+          a(href='#') 产科医疗团队
+          a(href='#') 妇科医疗团队
+          a(href='#') 不孕不育医疗团队
+          a(href='#') 新生儿科医疗团队
+          a(href='#') 计划生育医疗团队
+    li
+      .expand
+        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-special') 特色服务
+        #hospital-special.expand-menu.hide
+          a(href='#') 服务总览
+          a(href='#') 服务特色
+          a(href='#') 出诊指南
+          a(href='#') 出入院指南
+    li
+      a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-cases') 经典案例
+    li
+      .expand
+        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-contact') 联系我们
+        #hospital-contact.expand-menu.hide
+          a(href='#') 电话地址
+          a(href='#') 招贤纳士
+          a(href='#') 微信公众号
+
+- var scripts = ['/js/common.js']
