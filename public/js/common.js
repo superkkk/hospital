@@ -10,7 +10,7 @@
       $title = $(e.target);
     } else if( $(e.target).parents('expand-title').length ){
       $title = $(e.target).parents('expand-title')
-    } else if($(e.target).hasClass('expand-menu') || $(e.target).parents('expand-title').length){
+    } else if($(e.target).hasClass('expand-menu') || $(e.target).parents('expand-menu').length){
       //to nothing.
     } else{
       $('.expand-menu').toggleClass('hide',true);

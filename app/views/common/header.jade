@@ -1,12 +1,14 @@
 #header
-  h1 I'm header
+  .main-container
+    img(src='/img/logo.png')
+    img.pull-right(src='/img/contact.png')
 #nav
   ul.navigation
-    li
+    li(class=(navPage == 'home' ? 'selected' : ''))
       a.navigation-item(href='/') 首页
     li
       .expand
-        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-intro')医院介绍
+        a.navigation-item.expand-title(href='javascript:void(0)' expand-target='#hospital-intro') 医院介绍
         #hospital-intro.expand-menu.hide
           a(href='#') 印象锦江
           a(href='#') 院长致辞

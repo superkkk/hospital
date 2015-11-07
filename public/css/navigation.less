@@ -1,21 +1,26 @@
-.navigation(@height, @item-width, @font-size){
+.navigation(@height, @font-size){
   padding: 0;
   list-style: none;
   height: @height;
   line-height: @height;
+  margin:0;
   > li {
     float: left;
+    &:hover{
+      background-color: @expand-menu-bg;
+    }
+    &.selected{
+      background-color: @nav-selected-color;
+    }
     .navigation-item{
-      width: @item-width;
+      padding: 0 40px;
+      height: @height;
+      line-height: @height;
       font-size: @font-size;
       text-align: center;
       cursor: pointer;
       display: block;
-      &:hover{
-        background-color: darken(@base-color, 10%);
-      }
     }
-    margin:0 10px;
     a{
       color: #fff;
       text-decoration: none;
@@ -23,22 +28,27 @@
   }
 }
 ul.navigation{
-  .navigation(@nav-height, @nav-item-width, @nav-font-size);
+  .navigation(@nav-height, @nav-font-size);
   float: left;
-  margin-left: -(7 * (@nav-item-width + 20px) / 2);
+  margin-left: -514px;
 }
 
 .expand{
   position: relative;
   .expand-menu{
     position: absolute;
-    background-color: lighten(@base-color, 10%);
+    background-color: fadeout(@expand-menu-bg, 30%);
+    font-size: @expand-menu-item-font-size;
+    width: 100%;
+    left: 0;
+    top: @nav-height + 1;
     >a{
       display: block;
-      width: @nav-item-width;
       text-align: center;
+      height: @expand-menu-item-height;
+      line-height:@expand-menu-item-height;
       &:hover{
-        background-color: @base-color;
+        background-color: @expand-menu-bg;
       }
     }
   }

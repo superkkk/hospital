@@ -1,3 +1,299 @@
 #banner{
-  height: 500px;
+  height: @banner-height;
+  img{
+  height:@banner-height;}
+}
+#introduce{
+  margin-top: 60px;
+  .introduce-item{
+    width: 200px;
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 66px;
+    }
+    .image{
+      background-image: url('/img/icons.png');
+      width: 80px;
+      height: 60px;
+      margin: auto;
+    }
+    &.maternity .image{
+      background-position: 0 0;
+    }
+    &.gynaecology .image{
+      background-position: -80px 0;
+    }
+    &.infertility .image{
+      background-position: -160px 0;
+    }
+    &.newborn .image{
+      background-position: -240px 0;
+    }
+
+    .title{
+      text-align: center;
+      font-size: 18px;
+      color: #506173;
+      margin: 10px;
+    }
+    .info{
+      font-size: 14px;
+      color: #949ea9;
+      line-height: 22px;
+    }
+  }
+}
+
+#content{
+  section{
+    h3{
+      display: inline-block;
+      color: @base-color;
+      padding: 10px 0;
+      border-bottom: 1px solid @base-color;
+      margin-bottom: 20px;
+    }
+  }
+  .left-container{
+    width: @left-width;
+  }
+  .right-container{
+    width: @right-width;
+    margin-left: @left-width + 35px;
+  }
+  #news{
+    .more-news{
+      margin: 20px 0;
+      padding: 10px 0;
+      .a-link-set(#999);
+    }
+  }
+}
+.news-list{
+    .news-item{
+    @bigger-height: 160px;
+    @bigger-image-width: 240px;
+    @button-width: 120px;
+    @button-height: 40px;
+    &.bigger{
+      height: @bigger-height;
+      margin-bottom: 12px;
+      img.image-preview{
+        width: @bigger-image-width;
+        height: @bigger-height;
+        float: left;
+      }
+      .specific {
+        margin-left: @bigger-image-width + 20px;
+        h4 {
+          font-size: @font-size-medium;
+        }
+        .description {
+          @desc-height: @bigger-height - @font-size-medium - 20px - @button-height;
+          color: #666;
+          line-height: 22px;
+          min-height: @desc-height;
+          max-height: @desc-height;
+        }
+        button {
+          width: @button-width;
+          height: @button-height;
+        }
+      }
+    }
+
+    &:not(.bigger){
+      height: 38px;
+      line-height: 38px;
+      span.date{
+        float: right;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px dotted #ddd;
+      }
+    }
+  }
+}
+
+.images-list{
+  width: 100%;
+  .img-row{
+    width: 100%;
+    margin: 6px 0;
+    &.one-col{
+      height: 188px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.two-col{
+      height: 100px;
+      img{
+        width: (@right-width - 6) / 2;
+        height: 100%;
+        &:first-child{
+          margin-right: 3px;
+        }
+        &:last-child{
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+
+.person-details{
+  min-height: 350px;
+  .portrait{
+    height: 350px;
+    width: 240px;
+    margin-right: 20px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .infos{
+    margin-left: 260px;
+    .name{
+      &.chinese{
+        font-size: 24px;
+        color: @a-color;
+      }
+    }
+    .title{
+      font-size: 20px;
+      color: @a-color;
+      margin-left: 20px;
+    }
+    .desc{
+      font-size: 20px;
+    }
+    .tags{
+      max-height: 40px;
+      min-height: 40px;
+      overflow: hidden;
+      span.tag{
+        font-size: @font-size-base;
+        color: #333;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    }
+    h4{
+      font-size: 16px;
+    }
+    .experience{
+      color: #666;
+      min-height: 131px;
+      max-height: 131px;
+    }
+    button{
+      width: 170px;
+      height: 46px;
+      &:last-child{
+        margin-left: 25px;
+      }
+    }
+  }
+
+}
+
+.experts-list{
+  margin-top: 30px;
+  padding: 0 62px;
+  position: relative;
+  .scroll-wrapper{
+    overflow-x: scroll;
+  }
+  .doctors{
+    white-space: nowrap;
+    .doctor{
+      position: relative;
+      width: 150px;
+      height: 160px;
+      &:not(:last-child){
+        margin-right: 25px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .desc{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        background-color: fadeout(#000, 50%);
+      }
+      cursor: pointer;
+      &:hover{
+        border: 3px solid @base-color;
+      }
+    }
+  }
+  .scroll-button{
+    position: absolute;
+    top: 59px;
+    width: 24px;
+    height: 42px;
+    background-image: url('/img/arrow.png');
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    cursor: pointer;
+    &.prev-button{
+      left: 0;
+      background-position: 0 0;
+    }
+    &.next-button{
+      right: 0;
+      background-position: -24px 0;
+    }
+  }
+}
+
+#environment{
+  .switches{
+    margin:20px 0;
+    padding: 10px 0;
+  }
+  .env-images{
+    width: 340px;
+    height: 200px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  span.arrow{
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    background-image: url('/img/arrow2.png');
+    opacity: 0.6;
+    &.prev-arrow{
+      background-position: 0 0;
+    }
+    &.next-arrow{
+      background-position: -30px 0;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+#contact-us{
+  .tel,
+  .address,
+  .qr-title{
+    font-size: @font-size-medium;
+    color: #666;
+    line-height: 30px;
+  }
+  .qr-title{
+    margin-top:10px;
+  }
 }

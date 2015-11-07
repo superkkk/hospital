@@ -10,9 +10,9 @@ module.exports = function (app) {
 router.get('/', function (req, res, next) {
   Article.find(function (err, articles) {
     if (err) return next(err);
-    res.render('index', {
-      title: 'Generator-Express MVC',
-      articles: articles
+    res.render('home/index', {
+      title: '德阳锦江妇科医院',
+      navPage: 'home'
     });
   });
 });
