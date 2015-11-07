@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "body-parser": "^1.13.3",
-    "bootstrap": "file:node_modules/bootstrap",
+    "bootstrap": "~3.3.5",
     "compression": "^1.5.2",
     "cookie-parser": "^1.3.3",
     "express": "^4.13.3",

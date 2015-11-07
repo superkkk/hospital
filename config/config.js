@@ -26,7 +26,7 @@ var config = {
     app: {
       name: 'hospital'
     },
-    port: 3000,
+    port: 8080,
     db: 'mongodb://localhost/hospital-production'
   }
 };
