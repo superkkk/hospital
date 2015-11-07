@@ -95,6 +95,7 @@ ul.navigation > li a {
   position: absolute;
   z-index: 1000;
   background-color: rgba(52, 179, 114, 0.7);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F34b372,endColorstr=#7F34b372);
   font-size: 14px;
   width: 100%;
   left: 0;
