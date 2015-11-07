@@ -93,6 +93,7 @@ ul.navigation > li a {
 }
 .expand .expand-menu {
   position: absolute;
+  z-index: 1000;
   background-color: rgba(52, 179, 114, 0.7);
   font-size: 14px;
   width: 100%;
