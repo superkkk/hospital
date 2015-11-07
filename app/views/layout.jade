@@ -15,8 +15,8 @@ html(lang='en')
     include common/header
     block content
     include common/footer
-    script(src='/modules/jquery/dist/jquery.min.js')
-    script(src='/modules/bootstrap/dist/js/bootstrap.min.js')
+    script(type='text/javascript',src='/modules/jquery/dist/jquery.min.js')
+    script(type='text/javascript',src='/modules/bootstrap/dist/js/bootstrap.min.js')
     - scripts.forEach(function(script){
-      script(src='#{script}')
+      script(type='text/javascript',src='#{script}')
     -})

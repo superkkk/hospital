@@ -1,4 +1,4 @@
-$(document).ready(function() {
++function ($) {
   'use strict';
   //expand
   //hide menu when click blank
@@ -21,4 +21,4 @@ $(document).ready(function() {
       $(target).toggleClass('hide');
     }
   });
-});
+}(jQuery);
