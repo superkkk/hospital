@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  #banner
+    include banner
+  #introduce
+    include introduce
+  #content
+    section.main-container
+      .left-container.pull-left
+        #news
+          include news
+        #expert
+          include expert
+      .right-container
+        #cases
+          include cases
+        #environment
+          h3 医院环境
+          .switches.pull-right
+            a.prev(href='javascript:void(0)')
+              span.arrow.prev-arrow
+            a.next(href='javascript:void(0)')
+              span.arrow.next-arrow
+          .env-images
+            img(src='/img/4.jpg')
+        #contact-us
+          h3 联系我们
+          .tel 电话: 028-85415471 028-2432428
+          .address 地址: 德阳市黄山路一段
+          .qr-title.text-center 微信公众平台二维码
+          .qrcode.text-center
+            img(src='/img/erweima.png')

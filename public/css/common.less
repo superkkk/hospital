@@ -1,0 +1,73 @@
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+}
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+.clearfix{
+  .clearfix();
+}
+.main-container{
+  max-width: 1000px;
+  margin: auto;
+  &:extend(.clearfix all);
+}
+//overwirte original carousel's style
+.carousel-indicators li{
+  width: 60px;
+  height: 6px;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(255,255,255,.5);
+  &.active{
+    background-color: #fff;
+    height: 6px;
+    width: 60px;
+    margin: 1px;
+  }
+}
+.a-link-set(@color){
+  color: @color;
+  &:hover{
+    color: lighten(@color, 10%);
+    text-decoration: none;
+  }
+}
+//default set
+a{
+  .a-link-set(@a-color);
+}
+
+.line {
+  > * {
+    display: inline-block;
+  }
+}
+
+.separator{
+  height: 1px;
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.btn-primary{
+  background-color: @base-color;
+  font-size: @font-size-medium;
+  border-color: @base-color;
+  border-radius: 2px;
+  outline: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: #34b372;
+    border-color: #34b372;
+  }
+}
+
