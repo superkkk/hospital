@@ -22,6 +22,7 @@ body {
   border: none;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
 }
 .carousel-indicators li.active {
   background-color: #fff;
@@ -95,7 +96,7 @@ ul.navigation > li a {
   position: absolute;
   z-index: 1000;
   background-color: rgba(52, 179, 114, 0.7);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F34b372,endColorstr=#7F34b372);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F34b372,endColorstr=#7F34b372);
   font-size: 14px;
   width: 100%;
   left: 0;
@@ -155,7 +156,7 @@ ul.navigation > li a {
   color: #949ea9;
   line-height: 22px;
 }
-#content section h3 {
+#content h3 {
   display: inline-block;
   color: #57c690;
   padding: 10px 0;
@@ -203,15 +204,13 @@ ul.navigation > li a {
   width: 120px;
   height: 40px;
 }
-.news-list .news-item:not(.bigger) {
+.news-list .news-item.normal {
   height: 38px;
   line-height: 38px;
-}
-.news-list .news-item:not(.bigger) span.date {
-  float: right;
-}
-.news-list .news-item:not(.bigger):not(:last-child) {
   border-bottom: 1px dotted #ddd;
+}
+.news-list .news-item.normal span.date {
+  float: right;
 }
 .images-list {
   width: 100%;
@@ -241,10 +240,10 @@ ul.navigation > li a {
   margin-left: 3px;
 }
 .person-details {
-  min-height: 350px;
+  min-height: 300px;
 }
 .person-details .portrait {
-  height: 350px;
+  height: 300px;
   width: 240px;
   margin-right: 20px;
 }
@@ -283,8 +282,13 @@ ul.navigation > li a {
 }
 .person-details .infos .experience {
   color: #666;
-  min-height: 131px;
-  max-height: 131px;
+}
+.person-details .infos .experience .content {
+  min-height: 117px;
+  max-height: 117px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  text-overflow: ellipsis;
 }
 .person-details .infos button {
   width: 170px;
@@ -299,19 +303,18 @@ ul.navigation > li a {
   position: relative;
 }
 .experts-list .scroll-wrapper {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .experts-list .doctors {
   white-space: nowrap;
+  position: relative;
 }
 .experts-list .doctors .doctor {
   position: relative;
-  width: 150px;
-  height: 160px;
+  width: 160px;
+  height: 200px;
+  margin-right: 10px;
   cursor: pointer;
-}
-.experts-list .doctors .doctor:not(:last-child) {
-  margin-right: 25px;
 }
 .experts-list .doctors .doctor img {
   width: 100%;
@@ -330,12 +333,13 @@ ul.navigation > li a {
 }
 .experts-list .scroll-button {
   position: absolute;
-  top: 59px;
+  top: 79px;
   width: 24px;
   height: 42px;
   background-image: url('/img/arrow.png');
   background-repeat: no-repeat;
   opacity: 0.5;
+  filter: alpha(opacity = (50));
   cursor: pointer;
 }
 .experts-list .scroll-button.prev-button {

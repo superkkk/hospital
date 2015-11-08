@@ -3,7 +3,7 @@
   //expand
   //hide menu when click blank
   $(document).on('click', function(e){
-    console.log(e);
+    //console.log(e);
 
     var $title;
     if( $(e.target).hasClass('expand-title') ){
