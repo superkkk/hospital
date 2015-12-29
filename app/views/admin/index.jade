@@ -1,0 +1,16 @@
+extends ../admin_layout
+block content
+  - var scripts = ['/components/plupload/js/plupload.full.min.js','/js/admin/uploadImage.js','/js/admin/admin.js'];
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href="#") 后台管理
+  .container-fluid
+    .row
+      include ./sidebar
+      if active == 'doctors'
+        include ./doctors_manage
+      else if active == 'images'
+        include ./images_manage
+      else
+        include ./news_manage

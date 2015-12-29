@@ -2,14 +2,28 @@ h3 医院新闻
 a.pull-right.more-news(href='javascript:void(0)') MORE
 .news-list
   .news-item.bigger
-    img.image-preview( src="/img/news.jpg")
-    .specific
-      a.title(href="#")
-        h4 德阳锦江妇科医院于2015年10月17日正式试营业
-      .description 自8月份湖南电视台和重庆电视台大型真人秀节目xxxx播出后，xxx备受关注...
-      button.btn.btn-primary 查看详情
-  -for(var i = 0; i < 6; i++){
-  .news-item.normal
-    a.title(href="#") 德阳锦江妇科医院于2015年10月17日正式试营业
-    span.date 2015-10-27
-  -}
+    - if(!news || news.length == 0)
+      img.image-preview( src="/img/nopreview.png")
+      .specific
+        a.title(href="#")
+          h4 无新闻
+        .description 还没有新闻
+        button.btn.btn-primary(disabled) 查看详情
+    - else
+      img.image-preview( src=news[0].thumbnail)
+      .specific
+        a.title(href=news[0].url)
+          h4= news[0].title
+        .description !{news[0].content}
+        button.btn.btn-primary 查看详情
+  - for(var i = 0; i < 6; i++)
+      - if(!news || news.length == 0)
+          .news-item.normal
+      - else if(i + 1 < news.length)
+          .news-item.normal
+            a.title(href=news[i + 1].url)= news[i + 1].title
+            span.date= news[i + 1].dateString
+      - else
+          .news-item.normal
+            a.title(href=news[news.length - 1].url)= news[news.length - 1].title
+            span.date= news[news.length - 1].dateString

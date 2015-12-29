@@ -1,0 +1,8 @@
+.col-sm-3.col-md-2.sidebar
+  ul.nav.nav-sidebar
+    li.news-manage(class= (active == 'news' || !active ? 'active': ''))
+      a(href="/admin/news") 新闻管理
+    li.doctors-manage(class= (active == 'doctors' ? 'active': ''))
+      a(href="/admin/doctors") 医生管理
+    li.images-manage(class= (active == 'images' ? 'active': ''))
+      a(href="/admin/images") 图片管理

@@ -1,0 +1,12 @@
+table.table.table-hover
+  thead
+    tr
+      td.title 标题
+      td.op    操作
+  tbody
+    each val, index in news
+      tr.news
+        td= val.title
+        td
+          a.edit(href='#',data-toggle="modal",data-target="#NewsModal",data-op='edit',data-id=val._id.toString()) 编辑
+          a.delete(href='#', data-id=val._id.toString()) 删除

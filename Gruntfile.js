@@ -20,7 +20,8 @@ module.exports = function (grunt) {
     less: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.less'
+          'public/css/style.css': 'public/css/style.less',
+          'public/css/admin_style.css': 'public/css/admin_style.less'
         }
       }
     },
@@ -33,7 +34,8 @@ module.exports = function (grunt) {
         files: [
           'app.js',
           'app/**/*.js',
-          'config/*.js'
+          'config/*.js',
+          'routes/*.js'
         ],
         tasks: ['develop', 'delayed-livereload']
       },

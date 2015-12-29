@@ -9,7 +9,7 @@ var config = {
       name: 'hospital'
     },
     port: 3000,
-    db: 'mongodb://localhost/hospital-development'
+    db: 'mongodb://localhost/hospital'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'hospital'
     },
     port: 3000,
-    db: 'mongodb://localhost/hospital-test'
+    db: 'mongodb://localhost/hospital'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'hospital'
     },
     port: 8080,
-    db: 'mongodb://localhost/hospital-production'
+    db: 'mongodb://localhost/hospital'
   }
 };
 

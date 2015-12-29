@@ -1,0 +1,21 @@
+<!-- Modal -->
+#NewsModal.modal.fade(tabindex="-1",role="dialog",aria-labelledby="NewsModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button",data-dismiss="modal", aria-label="Close")
+          span(aria-hidden="true") &times;
+        h4#NewsModalLabel.modal-title 新增新闻
+
+      .modal-body
+        form
+          .form-group
+            input#title.form-control(type="text", placeholder="请输入标题")
+          textarea#textarea1(style='height:400px; width:100%;')
+        #uploadContainer
+          input#btnBrowse(type="button", value="选择文件")
+          input#btnUpload(type="button", value="上传文件")
+          ul#fileList
+      .modal-footer
+        button.btn.btn-default(type="button",data-dismiss="modal") 取消
+        button.btn.btn-primary.btn-submit(type="button") 确定
