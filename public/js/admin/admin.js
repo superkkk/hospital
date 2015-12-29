@@ -1,16 +1,18 @@
 +function ($) {
   'use strict';
 
-
-
-
   var $richeditor = $('#textarea1');
   var $NewsModal = $('#NewsModal');
 
   var editor;
   if($richeditor && $richeditor.length > 0) {
+    var expressionArr = [];
+    for(var i = 0; i < 100; i++) {
+      expressionArr.push('/components/wangEditor/expressions/'+(i+1)+'.gif');
+    }
     editor = $richeditor.wangEditor({
-      uploadImgComponent: $('#uploadContainer')
+      uploadImgComponent: $('#uploadContainer'),
+      expressions:expressionArr
     });
   }
 
