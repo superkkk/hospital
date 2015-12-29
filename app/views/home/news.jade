@@ -10,7 +10,10 @@ a.pull-right.more-news(href='javascript:void(0)') MORE
         .description 还没有新闻
         button.btn.btn-primary(disabled) 查看详情
     - else
-      img.image-preview( src=news[0].thumbnail)
+      - if(news[0].thumbnail)
+        img.image-preview(src=news[0].thumbnail)
+      - else
+        img.image-preview( src="/img/nopreview.png")
       .specific
         a.title(href=news[0].url)
           h4= news[0].title

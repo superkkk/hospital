@@ -199,6 +199,7 @@ ul.navigation > li a {
   line-height: 22px;
   min-height: 84px;
   max-height: 84px;
+  word-break: break-word;
 }
 .news-list .news-item.bigger .specific button {
   width: 120px;
