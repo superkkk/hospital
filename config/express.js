@@ -57,7 +57,7 @@ module.exports = function(app, config) {
 
   app.use(function (err, req, res, next) {
     res.status(err.status || 500);
-    logger.debug(err.message);
+    //logger.debug(err.message);
       res.render('error', {
         message: err.message,
         error: {},
