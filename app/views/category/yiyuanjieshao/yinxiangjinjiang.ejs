@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/content/normalize.css">
+    <link rel="stylesheet" href="/css/content/content-page.css">
+</head>
+<body>
+<div class="container">
+<% include ../../common/header2.ejs %>
+  <div class="main">
+    <div class="inner-container">
+      <div class="page-title">
+        医院介绍 <span class="sub">MATERNITY CENTER</span>
+      </div>
+
+      <div class="content clearfix">
+        <div class="left">
+          <% include ../../common/sidebar_yyjs.ejs%>
+
+        </div>
+        <div class="right">
+          <div class="crumbs">
+            <a href="/">首页</a> >
+            <a href="/category/<%= nav %>">医院介绍</a> >
+            印象锦江
+          </div>
+          <div class="main-content">
+            <img src="/img/医院banner.jpg" alt="">
+            <p>
+              德阳锦江妇科医院是一家专注于为广大妇女儿童提供高品质产科、妇科及新生儿科服务的专业妇产医院。医院秉承“尊重生命、尊贵女人”的真谛，以爱为核心价值，以客户为中心，倡导白领精英女性健康维养的终生健康管理观念，推行最先进的服务模式，始终以“享受生产，快乐分娩”为服务目标，以“妈妈幸福，宝宝健康”为服务宗旨。通过多功能、全方位、人性化的服务，为女性健康护航，引领德阳市高端妇产医院潮流。
+            </p>
+            <p>
+              我们拥有国际顶尖的医疗设备和国内资深的三甲医院专家医护团队，还与四川大学附属第二医院、妇女儿童中心医院、成都锦江医疗集团、德阳市人民医院等建立良好合作关系，以规范的诊疗流程和细致的服务模式给客户提供全新的安全医疗保障，温馨私密的医疗环境和星级感动服务处处体现出锦江“爱与关怀无处不在，为客户提供感动服务”的核心理念。
+            </p>
+            <p>
+              精良的设备，顶级的专家医疗队伍，最大限度的保证了您在德阳锦江妇科医院的安全。尊重生命是我们的责任，尊贵女人是您的品质，我们的用心您来体会，我们的服务您来检验，德阳锦江妇科医院全体员工诚挚欢迎您的光临。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% include ../../common/footer2.ejs %>
+<script type="text/javascript" src="/js/content/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/content/common.js"></script>
+</body>
+</html>

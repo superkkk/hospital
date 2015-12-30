@@ -6,12 +6,28 @@ router.get('/', function(req, res, next){
   home.homePage(req, res, next);
 });
 
-router.get('/test', function(req, res, next) {
-  res.render('hi-tech', {
+router.get('/category/:name/:sub_name', function(req, res, next) {
+  res.render('category/'+ req.params.name + '/' + req.params.sub_name + '.ejs', {
     title: '德阳锦江妇科医院',
-    navPage: 'home',
-    news: ''
+    nav: req.params.name,
+    subNav: req.params.sub_name
   });
 });
+
+router.get('/category/:name', function(req, res, next) {
+  var _tmp =  '';
+  switch (req.params.name) {
+    case 'yiyuanjieshao':
+         _tmp = 'yinxiangjinjiang';
+          break;
+    case 'keshijieshao':
+          _tmp = 'chankejieshao';
+          break;
+  }
+
+  var tmp = '/category/'+ req.params.name + '/' + _tmp;
+  res.redirect(tmp);
+});
+
 
 module.exports = router;

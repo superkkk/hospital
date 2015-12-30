@@ -125,7 +125,7 @@ ul.navigation > li a {
   display: inline-block;
 }
 #introduce .introduce-item:not(:last-child) {
-  margin-right: 66px;
+  margin-right: 62px;
 }
 #introduce .introduce-item .image {
   background-image: url('/img/icons.png');
@@ -296,7 +296,7 @@ ul.navigation > li a {
   height: 46px;
 }
 .person-details .infos button:last-child {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 .experts-list {
   margin-top: 30px;

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/content/normalize.css">
+    <link rel="stylesheet" href="/css/content/content-page.css">
+</head>
+<body>
+<div class="container">
+<% include ../../common/header2.ejs %>
+  <div class="main">
+    <div class="inner-container">
+      <div class="page-title">
+        产科中心 <span class="sub">MATERNITY CENTER</span>
+      </div>
+
+      <div class="content clearfix">
+        <div class="left">
+         <% include ../../common/sidebar_ksjs.ejs%>
+
+        </div>
+        <div class="right">
+          <div class="crumbs">
+            <a href="/">首页</a> >
+            <a href="/category/<%= nav %>">产科中心</a> >
+            产科介绍
+          </div>
+          <div class="main-content">
+            <img src="/img/产科banner.jpg" alt="">
+            <p>
+              产科中心是锦江独具有实力的部门之一，我们在提供安全医疗保障的同时，着重为您提供一流的人性化的服务，让您充分享受即将做母亲的感觉，在家庭化的氛围之中渡过一个愉快的孕期。
+            </p>
+            <p>
+              产前检查及分娩的医疗标准依照美国妇产科医学院指引（The American College of Obstetricians and Gynecologist）制定，导入全新的国际FCMC(FAMILY CENTERED MATERNITY CARE)家庭化产护模式，并制定出个性化的分娩流程，为客户在孕前、孕中、产后提供从优孕指导、孕期保健、分娩方式甄选到产后康复、塑身的全程绿色无缝隙呵护。
+            </p>
+            <p>
+              在锦江产科中心的孕育之旅让您感受到全面舒适、方便、私密的家庭化生育服务。这里的环境优雅、温馨（网上参观）,门诊通过预约制让您省去了等候的时间，产科专家与您有充分的时间交流，我们鼓励丈夫陪同就诊，产房按美国家庭化待产、生产一体化的理念设计，同时锦江还可以为您提供从孕期的护理、检查以及产后恢复、塑身等一系列的全面服务。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% include ../../common/footer2.ejs %>
+<script type="text/javascript" src="/js/content/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/content/common.js"></script>
+</body>
+</html>

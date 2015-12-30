@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<% include ../common/header.ejs%>
+<div id="banner">
+  <% include banner.ejs%>
+</div>
+
+<div id="introduce">
+  <% include introduce.ejs%>
+</div>
+
+<div id="content">
+  <div class="main-container">
+    <div class="left-container pull-left">
+     <div id="news">
+       <% include news.ejs%>
+     </div>
+      <div id="expert">
+        <% include expert.ejs%>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div id="case">
+        <%include cases.ejs%>
+      </div>
+      <div id="environment">
+        <h3>医院环境</h3>
+          <div class="switches pull-right"><a href="javascript:void(0)" class="prev"><span class="arrow prev-arrow"></span></a><a href="javascript:void(0)" class="next"><span class="arrow next-arrow"></span></a></div>
+          <div class="env-images"><img src="/img/7.png"/></div>
+      </div>
+      <div id="contact-us">
+        <h3>联系我们 </h3>
+          <div class="tel">电话: 028-85415471 028-2432428</div>
+          <div class="address">地址: 德阳市黄山路一段</div>
+          <div class="qr-title text-center">微信公众平台二维码</div>
+          <div class="qrcode text-center"><img src="/img/erweima.png"/></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../common/footer.ejs%>
+<script type="text/javascript" src="/modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/content/normalize.css">
+    <link rel="stylesheet" href="/css/content/content-page.css">
+</head>
+<body>
+<div class="container">
+<% include ../../common/header2.ejs %>
+  <div class="main">
+    <div class="inner-container">
+      <div class="page-title">
+        产科中心 <span class="sub">MATERNITY CENTER</span>
+      </div>
+
+      <div class="content clearfix">
+        <div class="left">
+          <% include ../../common/sidebar_ksjs.ejs%>
+
+        </div>
+        <div class="right">
+          <div class="crumbs">
+            <a href="/">首页</a> >
+            <a href="/category/<%= nav %>">产科中心</a> >
+            孕期服务
+          </div>
+          <div class="main-content">
+            <p class="sub-title">
+              为什么要做产前检查？
+            </p>
+            <p>
+              产前检查的重要性主要体现在两个方面，一是通过产前检查，能够了解各个阶段胎儿发育情况，例如胎儿在子宫内生长发育是否正常，是否存在畸形，以预防畸形儿的出生；二是持续观察孕妇营养是否良好，是否有常见的妊娠合并症等，以便及时治疗，防止疾病向严重阶段发展。
+            </p>
+            <img src="/img/孕期服务1.png" alt="">
+            <p class="sub-title">
+              孕期如何做产检？
+            </p>
+            <div class="tab">
+              <div class="tab-items">
+                <a data-id="zao" href="" class="active">孕早期产检</a>
+                <a data-id="zhong" href="">孕中期产检</a>
+                <a data-id="wan" href="">孕晚期产检</a>
+              </div>
+              <div class="tab-box">
+                <div id="box-zao" class="active">
+                  <p class="sub-title-small">
+                    第一次产检：孕6-7周
+                  </p>
+                  <p>
+                    检查血HCG：判定准妈妈是否妊娠，以及初步判断宝宝的孕育时间。
+                  </p>
+                  <p>
+                    检查B超：胚胎是否存在于孕囊内，排除是否宫外孕、葡萄胎等异常妊娠。另需了解宝宝的个数及基本情况。
+                  </p>
+                  <p class="sub-title-small">
+                    第二次产检：孕7-12周
+                  </p>
+                  <p>
+                    甲状腺功能：早期检查甲状腺功能很重要，甲状腺素的主要作用是促进物质与能量代谢，促进生长和发育过程。发现问题，早期治疗，就不会对胎儿造成影响。
+                  </p>
+                  <p>
+                    孕酮及β-HCG：对于高龄妈妈及有高风险的孕妇可以检测孕酮及β-HCG，了解妈妈的孕激素水平，宝宝的发育情况。
+                  </p>
+                  <p class="sub-title-small">
+                    第三次产检：孕12-16周
+                  </p>
+                  <p>
+                    NT检测：颈后透明带扫描通常在孕11～13周进行。医生通过分辨率非常高的超声波，检查胎儿的颈后部透明处的厚度。通常采用腹部B超，但也要看宝宝和子宫的位置，必要时要通过阴道B超，这样可以看得更清楚。多数唐氏综合症宝宝的颈后透明带如果测量值大于正常的宝宝厚3毫米为异常。
+                  </p>
+                  <p>
+                    建档：通过了危险期的宝宝，此时已经孕育的很好了。准妈妈们这个时候就需要在正规医院建档，通过一系列的检查，来了解自身及宝宝的情况了。具体的检查项目，根据你自身的情况，医院的要求和病情的需要来确定。
+                  </p>
+
+                </div>
+                <div id="box-zhong">
+                  <p class="sub-title-small">
+                    第四次产检：孕16-20周
+                  </p>
+                  <p>
+                    在我国，唐氏综合症的发病率大约为1/600~1/800，其中99%的唐氏儿由健康夫妇孕育。虽然35岁以上的高龄孕妇比较容易增添患病风险，但35岁以
+                    下的产妇也不可掉以轻心，85%的唐氏儿是由35岁以下的产妇分娩的。唐氏综合症虽是一种偶发性疾病，但每一个怀孕妇女都有可能生出唐氏儿，给家庭和个人
+                    的幸福带来沉重的影响。
+                  </p>
+                  <p>
+                    唐氏筛查(经济、简单的检测方法):
+                    通过抽取孕妇血清，检测母体血清中甲型胎儿蛋白、绒毛促性腺激素和游离雌三醇的浓度。并结合孕妇的预产期、体重、年龄、体重和采血时的孕周等，计算生出先天缺陷胎儿的危险系数。唐氏检查可筛检出60--70％的唐氏症患儿。唐筛检查只能帮助判断胎儿患有唐氏症的机会有多大，但不能明确胎儿是否患上唐氏症。也就是说抽血化验指数偏高时，怀有"唐"宝宝的机会较高，但并不代表胎儿一定有问题。
+                    另一方面，即使化验指数正常，也不能保证胎儿肯定不会患病。
+                  </p>
+                  <p>
+                    无创DNA(无创的检测方法):
+                  </p>
+                  <p class="sub-title-small">
+                    第五次产检：孕20-24周
+                  </p>
+                  <p>
+                    胎儿在24周-26周左右时正是大脑突飞猛进的发育时期，这个时期的胎宝宝结构已经成形，宝宝的大小以及羊水适中，在宫内有较大的活动空间，胎儿骨骼回声影响比较小，图像也会比较清晰。因此，是做系统及针对性彩超的最佳时间。
+                  </p>
+                </div>
+                <div id="box-wan">
+                  <p class="sub-title-small">
+                    第六次产检：孕24-28周
+                  </p>
+                  <p>
+                    75g葡萄糖耐量试验
+                  </p>
+                  <p class="sub-title-small">
+                    第七次产检：孕28-30周
+                  </p>
+                  <p>
+                    学会自数胎动
+                  </p>
+                  <p class="sub-title-small">
+                    第八次产检：孕30-32周
+                  </p>
+                  <p>
+                    彩超：评估胎儿生长发育，指导治疗，了解胎位，便于纠正，必要时用心脏彩超，了解心脏情况。
+                  </p>
+                  <p>
+                    心电图：了解孕妇心电情况。
+                  </p>
+                  <p>
+                    复查血RT，尿RT，肝肾功，胆汁酸
+                  </p>
+                  <p class="sub-title-small">
+                    第九次产检：孕32-34周
+                  </p>
+                  <p>
+                    小便常规、胎监
+                  </p>
+                  <p class="sub-title-small">
+                    第十次产检：孕36周
+                  </p>
+                  <p>
+                    彩超：了解胎位，羊水，胎盘和脐带情况，初步确定分娩方式。
+                  </p>
+                  <p>
+                    胎监：每周一次，必要时复查肝肾功能、血糖。
+                  </p>
+                  <p class="sub-title-small">
+                    第11-14次产检：孕37-40周
+                  </p>
+                  <p>
+                    胎监：每周检查
+                  </p>
+                  <p>
+                    彩超：根据具体情况安排时间和次数
+                  </p>
+                  <p>
+                    肝肾功：根据具体情况安排
+                  </p>
+                  <p>
+                    小便常规：根据具体情况安排
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="sub-title">
+              产检为何选择德阳锦江？
+            </p>
+            <p>
+              德阳锦江妇科医院为让德阳女性在孕期可做"十月皇后"，产科中心从服务细节、专家团队、技术项目到医院环境、会员制都在不断升级。日前，德阳锦江已成为德阳地区高端妇婴健康领域领先品牌，为孕产妇提供从优孕指导、围产期保健、分娩、月子康复一系列全面服务。
+            </p>
+            <p class="sub-title-small">
+              国际先进技术
+            </p>
+            <p>
+              德阳锦江妇科医院引进国际前沿技术及精密专业检测设备，让顾客在检查过程中更放松，检查结果更清晰、精准。
+            </p>
+            <img src="/img/产科通用长图.jpg" alt="">
+            <p class="sub-title-small">
+              顶级专家团队
+            </p>
+            <p>
+              德阳锦江妇科医院聘权威妇产科医疗泰斗组成超强阵容专家团队，并在产检服务中独家开设"多对一"专家集群会诊，为孕妇和胎儿安全提供有力保障。
+            </p>
+            <div class="doc-switcher">
+              <div class="current">
+                <div class="doc-item active" id="doc-1">
+                  <div class="doc-img"></div>
+                  <div class="doc-info">
+                    <div class="title-area">
+                      <div class="c-name">
+                        <span>李晓辉</span><span class="title">硕士研究生，副主任医师</span>
+                      </div>
+                      <div class="p-name">
+                        Lixiaohui
+                      </div>
+                    </div>
+                    <div class="desc">
+                      1.对付脸色看对方深刻的房价快速流动放暑假大放送打发时间的粉色街道放
+                    </div>
+                    <div class="btn-area">
+                      <a href="" class="btn">了解更多</a>
+                      <a href="" class="btn">在线咨询</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="doc-item " id="doc-2">
+                  <div class="doc-img"></div>
+                  <div class="doc-info">
+                    <div class="title-area">
+                      <div class="c-name">
+                        <span>李晓辉</span><span class="title">硕士研究生，副主任医师</span>
+                      </div>
+                      <div class="p-name">
+                        Lixiaohui
+                      </div>
+                    </div>
+                    <div class="desc">
+                      2.对付脸色看对方深刻的房价快速流动放暑假大放送打发时间的粉色街道放
+                    </div>
+                    <div class="btn-area">
+                      <a href="" class="btn">了解更多</a>
+                      <a href="" class="btn">在线咨询</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="doc-item " id="doc-3">
+                  <div class="doc-img"></div>
+                  <div class="doc-info">
+                    <div class="title-area">
+                      <div class="c-name">
+                        <span>李晓辉</span><span class="title">硕士研究生，副主任医师</span>
+                      </div>
+                      <div class="p-name">
+                        Lixiaohui
+                      </div>
+                    </div>
+                    <div class="desc">
+                      3.对付脸色看对方深刻的房价快速流动放暑假大放送打发时间的粉色街道放
+                    </div>
+                    <div class="btn-area">
+                      <a href="" class="btn">了解更多</a>
+                      <a href="" class="btn">在线咨询</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="doc-item " id="doc-4">
+                  <div class="doc-img"></div>
+                  <div class="doc-info">
+                    <div class="title-area">
+                      <div class="c-name">
+                        <span>李晓辉</span><span class="title">硕士研究生，副主任医师</span>
+                      </div>
+                      <div class="p-name">
+                        Lixiaohui
+                      </div>
+                    </div>
+                    <div class="desc">
+                      4.对付脸色看对方深刻的房价快速流动放暑假大放送打发时间的粉色街道放
+                    </div>
+                    <div class="btn-area">
+                      <a href="" class="btn">了解更多</a>
+                      <a href="" class="btn">在线咨询</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-tab">
+                <div class="tab-item active" data-id="1">
+                  <img src="" alt="">
+                  <div class="tab-info">
+                    <div class="name">章卫</div>
+                    <div class="title">副主任医师</div>
+                  </div>
+                </div>
+                <div class="tab-item" data-id="2">
+                  <img src="" alt="">
+                  <div class="tab-info">
+                    <div class="name">章卫</div>
+                    <div class="title">副主任医师</div>
+                  </div>
+                </div>
+                <div class="tab-item" data-id="3">
+                  <img src="" alt="">
+                  <div class="tab-info">
+                    <div class="name">章卫</div>
+                    <div class="title">副主任医师</div>
+                  </div>
+                </div>
+                <div class="tab-item" data-id="4">
+                  <img src="" alt="">
+                  <div class="tab-info">
+                    <div class="name">章卫</div>
+                    <div class="title">副主任医师</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <p class="sub-title-small">
+              更多增值服务
+            </p>
+            <img src="/img/产科通用长图.jpg" alt="">
+            <p class="sub-title-small">
+              分娩预演
+            </p>
+            <p>
+              在美国,有很多家医院都提供分娩预演服务,以减轻准妈妈的担心和恐惧。分娩预演内容是医院为产妇模拟一个完整的入院、待产、分娩过程，整个过程包括从开始有临产征兆、接诊、产床模拟分娩等各个环节。这样能让产妇熟悉临产时的流程和医院产房的环境、设施，真正做到心中有数，消除由于陌生而带来的恐惧。
+            </p>
+            <p>
+              目前，国内的大多数医院还不能提供如此细致、体贴的孕期服务。德阳锦江妇科医院本着"以病人为中心"的服务理念，率先在德阳开展了"分娩预演"这一国际上流行的周到、细致、体贴的人性化服务，带给您如家人般的温馨呵护。
+            </p>
+            <p>
+              在此，希望您能顺利地完成分娩，尽情地享受分娩。若干年以后，每每提及分娩，留在您记忆中的将会是周到体贴、呵护，更多的温馨、甜蜜和听到宝宝第一声啼哭的幸福。
+            </p>
+            <img src="/img/分娩1.png" alt="">
+            <img src="/img/分娩2.png" alt="">
+            <img src="/img/分娩3.png" alt="">
+            <img src="/img/分娩4.png" alt="">
+            <img src="/img/分娩5.png" alt="">
+            <img src="/img/分娩6.png" alt="">
+
+
+            <div class="table">
+              <table>
+                <thead>
+                <tr>
+                  <th>序列</th>
+                  <th>模拟环节</th>
+                  <th>内容</th>
+                  <th>参与人</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>临产时拨打电话</td>
+                  <td>
+                    出现临产征兆时及时拨打医院电话联系。
+                    <br>向医务人员仔细描述孕妇的情况，由医务人员确认是否需要前往医院。
+                    <br>如确认需前往医院，向医务人员告知姓名、病案号、主诊医师、专家医师等信息，并告知预计多长时间到达。
+                  </td>
+                  <td>
+                    孕妇，家属，医务人员
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2.
+                  </td>
+                  <td>
+                    前往医院
+                  </td>
+                  <td>
+                    .注意携带入院物品（参照入院物品宣传页，服务指南）。
+                    <br>如孕妇出现突然阴道流水，前往医院途中应注意孕妇体位。应左侧卧位、抬高臀部。
+                  </td>
+                  <td>
+                    孕妇，家属
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3.
+                  </td>
+                  <td>
+                    抵达医院
+                  </td>
+                  <td>
+                    抵达医院后，向接诊台说明急诊，直接停车至急诊入口处。
+                    <br>助产士在急诊入口处等候孕妇。
+                  </td>
+                  <td>
+                    孕妇，家属，医院保安，医院接待人员
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    4.
+                  </td>
+                  <td>
+                    接诊程序
+                  </td>
+                  <td>
+                    助产士将孕妇接入急诊室，由主诊医师进行检查。
+                    <br>检查后，由助产士送孕妇及家属至病房，在病房进行更衣后，再送孕妇及家属共同前往产房。
+                    <br>如孕妇情况紧急，将被直接送往产房或手术室。
+                  </td>
+                  <td>
+                    孕妇，家属，主诊医师， 助产士，其他医院工作人员
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    5.
+                  </td>
+                  <td>
+                    产房总体介绍
+                  </td>
+                  <td>
+                    助产士介绍产房分娩模式：待产与分娩室一体，一对一全程陪伴分娩（导乐）、鼓励准爸爸或一名亲属参与、陪伴、可模拟由亲属剪断孩子的脐带。产后2小时回病房休养
+                    <br>介绍产房环境、设施及对孕妇和陪产家属的配餐情况
+                    <br>介绍产程，介绍不同产程可能会出现的情况
+                  </td>
+                  <td>
+                    孕妇，家属，主诊医师，助产士
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    6.
+                  </td>
+                  <td>
+                    产程预演
+                  </td>
+                  <td>
+                    第一产程：
+                    <br>使用产床，可自由体位（头浮、已破膜者除外）
+                    <br>指导进食，小便等
+                    <br>讲解按时监测胎心音、宫缩、产程进展的情况
+                    <br>指导宫缩时的呼吸模式
+                    <br>麻醉医师介绍无痛分娩
+                    <br>第二产程：
+                    <br>产床亲身体验，需与助产士取得密切配合
+                    <br>指导分娩时采取的体位、呼吸方法、用力技巧、放松技巧
+                    <br>指导接生时需要家属配合的事项
+                    <br>若选择亲属剪断小儿脐带可试模拟操作
+                    <br>第三产程：
+                    <br>新生儿与母亲的亲密皮肤接触、早吸吮
+                    <br>产后观察两小时，无异常送回病房休养
+                  </td>
+                  <td>
+                    孕妇，家属，主诊医师，助产士，麻醉医师
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    7.
+                  </td>
+                  <td>
+                    病房，新生儿室的介绍
+                  </td>
+                  <td>
+                    病房护士介绍产后病房护理情况
+                    <br>客服人员介绍每日餐饮供应情况，即其它设施及使用
+                    <br>儿科医生介绍新生儿的护理内容
+                  </td>
+                  <td>
+                    孕妇，家属，主诊医师，病房护士，儿科医生，客服人员
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              <div class="table-tip">
+                <p>说明：</p>
+                <ol>
+                  <li>以上预演程序适用于正常自然分娩。对于异常分娩或剖宫产的情况，所涉及的程序会与上述程序有所不同，主诊医师在与您指定分娩计划时，会与您说明。</li>
+                  <li>以上预演程序中有些项目不适合演练，而是作为您真正临产时须注意的内容。</li>
+                </ol>
+              </div>
+            </div>
+
+            <p class="sub-title-small">
+              分娩计划
+            </p>
+            <p>
+              德阳锦江为您带来专业的分娩计划，在充分尊重您选择权的情况下，让分娩更加人性化、个体化，可以让您为宝宝的到来做好充分准备，让分娩过程更简单，更安全。
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+<% include ../../common/footer2.ejs %>
+<script type="text/javascript" src="/js/content/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/content/common.js"></script>
+</body>
+</html>

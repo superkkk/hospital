@@ -1,0 +1,60 @@
+<h3>医院新闻</h3>
+<a href="javascript:void(0)" class="pull-right more-news">MORE</a>
+<div class="news-list">
+  <div class="news-item bigger">
+    <% if (!news || news.length == 0) { %>
+    <img src="/img/nopreview.png" alt="" class="image-preview">
+    <div class="specific">
+      <a href="#" class="title">
+        <h4>无新闻</h4>
+      </a>
+      <div class="description">
+        还没有新闻
+      </div>
+      <button class="btn btn-primary" disabled>
+        查看详情
+      </button>
+    </div>
+    <% } else { %>
+    <% if (news[0].thumbnail) { %>
+    <img src="<%= news[0].thumbnail %>" alt="" class="image-preview">
+    <% } else { %>
+    <img src="/img/nopreview.png" alt="" class="image-preview">
+    <% } %>
+    <div class="specific">
+      <a href="<%= news[0].url %>" class="title">
+        <h4><%= news[0].title %></h4>
+      </a>
+      <div class="description">
+        <%= news[0].content %>
+      </div>
+      <button class="btn btn-primary" disabled>
+        查看详情
+      </button>
+    </div>
+    <% } %>
+  </div>
+  <% for(var i=0; i<6; i++) {%>
+    <%if(!news || news.length == 0){%>
+      <div class="news-item normal"></div>
+    <%}else if(i + 1 < news.length){%>
+      <div class="news-item normal">
+        <a href="<%news[i+1].url%>" class="title">
+          <%news[i+1].title%>
+        </a>
+        <span class="date">
+          <% news[i +1].dateString%>
+        </span>
+      </div>
+    <%} else {%>
+   <div class="news-item normal">
+        <a href="<%news[news.length - 1].url%>" class="title">
+          <%news[news.length - 1].title%>
+        </a>
+        <span class="date">
+          <% news[news.length - 1].dateString%>
+        </span>
+      </div>
+    <%}%>
+  <% } %>
+</div>
