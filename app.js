@@ -19,8 +19,7 @@ models.forEach(function (model) {
 var app = express();
 
 require('./config/express')(app, config);
-app.engine('.html', ejs.__express);
-app.set("view engine","html");
+app.set("view engine","ejs");
 
 app.listen(config.port, function () {
   console.log('Express server listening on port ' + config.port);
