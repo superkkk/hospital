@@ -37,6 +37,9 @@ body {
   text-align: center;
   line-height: 46px;
 }
+.btn:hover {
+  background: #34b372;
+}
 .header {
   background: white;
   border-top: 4px solid #58c78f;

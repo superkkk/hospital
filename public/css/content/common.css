@@ -37,3 +37,6 @@ body {
   text-align: center;
   line-height: 46px;
 }
+.btn:hover {
+  background: #34b372;
+}
