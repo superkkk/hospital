@@ -1,0 +1,66 @@
+.footer {
+  margin-top: -315px;
+  border-top: 4px solid #58c78f;
+}
+.footer .footer-top {
+  height: 211px;
+  background: #31343e;
+  border-bottom: 1px solid #acaeb3;
+}
+.footer .footer-top .inner-container {
+  padding-left: 300px;
+  width: 800px;
+}
+.footer .footer-top .logo {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  float: left;
+  background: url("../../img/logo.png") no-repeat;
+}
+.footer .footer-top .links {
+  color: white;
+  float: left;
+  padding: 30px 0 0 80px;
+}
+.footer .footer-top .links .link-group {
+  float: left;
+  margin-right: 40px;
+}
+.footer .footer-top .links .link-group .link-head {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+}
+.footer .footer-top .links .link-group .link-container {
+  min-width: 100px;
+}
+.footer .footer-top .links .link-group .link-container.two-column {
+  width: 200px;
+}
+.footer .footer-top .links .link-group .link-container.two-column .link-item {
+  float: left;
+}
+.footer .footer-top .links .link-group .link-container .link-item {
+  min-width: 100px;
+  line-height: 24px;
+}
+.footer .footer-top .links .link-group .link-container .link-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.footer .footer-bottom {
+  height: 104px;
+}
+.footer .footer-bottom .content {
+  padding-top: 20px;
+}
+.footer .footer-bottom .content p {
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}

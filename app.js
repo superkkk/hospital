@@ -3,7 +3,8 @@
 var express = require('express'),
   config = require('./config/config'),
   glob = require('glob'),
-  mongoose = require('mongoose');
+  mongoose = require('mongoose'),
+  ejs = require('ejs');
 
 mongoose.connect(config.db);
 var db = mongoose.connection;
@@ -18,6 +19,8 @@ models.forEach(function (model) {
 var app = express();
 
 require('./config/express')(app, config);
+app.engine('.html', ejs.__express);
+app.set("view engine","html");
 
 app.listen(config.port, function () {
   console.log('Express server listening on port ' + config.port);

@@ -1,0 +1,352 @@
+@import "common";
+@import "header";
+@import "footer";
+
+.container {
+  .main {
+    padding-bottom: 315px;
+
+    .page-title {
+      height: 110px;
+      line-height: 110px;
+      font-size: 26px;
+      color: #57c790;
+
+      span {
+        color: #646464;
+        font-size: 20px;
+      }
+    }
+
+    .content {
+      padding: 0 0 40px 200px;
+      .left {
+        float: left;
+        width: 200px;
+        margin-left: -200px;
+
+        .side-bar {
+          .side-bar-head {
+            height: 87px;
+            padding-top: 45px;
+            outline: 1px solid #eeeeee;
+            background: url("../../img/小导航.jpg") no-repeat;
+
+            .side-bar-head-title {
+              height: 75px;
+              line-height: 75px;
+              color: white;
+              background: rgba(0, 0, 0, .6);
+              padding-left: 12px;
+              display: none;
+            }
+          }
+
+          .side-bar-links {
+            margin: 6px 0 0 0;
+            padding: 0;
+            list-style: none;
+            li {
+              height: 50px;
+              padding-left: 24px;
+              background: #88d8b0;
+              margin-top: 2px;
+
+              &.active {
+                background: #57c790;
+              }
+
+              a {
+                line-height: 50px;
+                color: white;
+                font-size: 16px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+      }
+
+      .right {
+        margin-left: 47px;
+        .crumbs {
+          font-size: 14px;
+          color: #333333;
+          line-height: 22px;
+          margin-bottom: 10px;
+          a {
+            text-decoration: none;
+            color: #5bca92;
+          }
+        }
+        .main-content {
+          & > img {
+            max-width: 100%;
+
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 30px;
+            text-indent: 2em;
+
+            &.sub-title {
+              font-size: 20px;
+              color: #5bca92;
+              text-indent: 0;
+            }
+
+            &.sub-title-small {
+              font-size: 16px;
+              color: #5bca92;
+              text-indent: 0;
+            }
+          }
+
+          ul {
+            li {
+              line-height: 30px;
+            }
+          }
+
+          .img-group {
+            a {
+              float: left;
+              margin-right: 10px;
+              img {
+
+              }
+            }
+          }
+
+          .table {
+            margin-top: 20px;
+            .table-title {
+              text-align: center;
+              font-size: 24px;
+              color: #5bca92;
+              line-height: 55px;
+            }
+            table {
+              width: 100%;
+              border: 1px solid #efefef;
+
+              th, td {
+                border: 1px solid #efefef;
+              }
+
+              tr {
+                min-height: 48px;
+                &.center {
+                  td {
+                    text-align: center;
+                    padding: 0;
+                    line-height: 48px;
+                  }
+                }
+              }
+
+              th {
+                font-size: 18px;
+                color: #5bca92;
+                text-align: center;
+                font-weight: normal;
+                height: 60px;
+                line-height: 60px;
+                white-space: nowrap;
+              }
+
+              td {
+                font-size: 14px;
+                padding: 15px;
+                line-height: 24px;
+
+                &.no-wrap {
+                  white-space: nowrap;
+                }
+              }
+            }
+
+            .table-tip {
+              p {
+                font-weight: bold;
+                text-indent: 0;
+                margin: 10px 0;
+              }
+
+              ol {
+                margin: 0;
+                padding: 0 0 0 22px;
+                li {
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+
+          .tab {
+            .tab-items {
+              height: 40px;
+              line-height: 40px;
+              border-bottom: 1px solid #efefef;
+
+              a {
+                text-decoration: none;
+                font-size: 20px;
+                line-height: 40px;
+                padding: 0 20px 0 0;
+                color: #333333;
+                &.active {
+                  color: #5bca92;
+                }
+              }
+            }
+
+            .tab-box {
+              & > div {
+                display: none;
+
+                &.active {
+                  display: block;
+                }
+              }
+
+              p {
+                text-indent: 0;
+              }
+            }
+
+          }
+
+          .doc-switcher {
+            .current {
+              height: 300px;
+              .doc-item {
+                display: none;
+                position: relative;
+                padding-left: 260px;
+
+                &.active {
+                  display: block;
+                }
+
+                .doc-img {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  height: 300px;
+                  width: 240px;
+                  outline: 1px solid #eeeeee;
+                }
+
+                .doc-info {
+                  .title-area {
+                    height: 60px;
+                    border-bottom: 1px solid #e5e5e5;
+
+                    .c-name {
+                      font-size: 22px;
+                      color: #5bca92;
+                      .title {
+                        margin-left: 10px;
+                        font-size: 16px;
+                      }
+                    }
+
+                  }
+
+                  .desc {
+                      line-height: 24px;
+                      font-size: 16px;
+                      color: #333333;
+                      padding: 20px 0;
+                    }
+
+                  .btn-area {
+                    .btn {
+                      margin-right: 20px;
+                    }
+                  }
+                }
+              }
+            }
+
+            .doc-tab {
+              margin-top: 30px;
+              height: 200px;
+               .tab-item {
+                 float: left;
+                 height: 200px;
+                 width: 160px;
+                 margin-right: 35px;
+                 position: relative;
+                 outline: 1px solid #eeeeee;
+                 cursor: pointer;
+
+                 &.active {
+                   outline: 4px solid #5bca92;
+                 }
+                 &:last-child {
+                   margin-right: 0;
+                 }
+
+                 .tab-info {
+                   position: absolute;
+                   left: 0;
+                   bottom: 0;
+                   height: 43px;
+                   background: rgba(0,0,0,.6);
+                   color: white;
+                   font-size: 14px;
+                   width: 100%;
+                   text-align: center;
+                   .name {
+
+                   }
+
+                   .title {
+
+                   }
+                 }
+               }
+            }
+          }
+
+          .img-slider {
+            margin: 20px 0;
+            .img-item-container {
+              height: 204px;
+              img {
+                opacity: .6;
+                width: 140px;
+                height: 92px;
+                margin: 0 10px 10px 0;
+                outline: 1px solid #eeeeee;
+                float: left;
+                cursor: pointer;
+
+                &.active {
+                  opacity: 1;
+                }
+              }
+            }
+
+            .current {
+              margin-top: 20px;
+              height: 500px;
+              width: 100%;
+              text-align: center;
+              vertical-align: middle;
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+

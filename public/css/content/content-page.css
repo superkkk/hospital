@@ -1,0 +1,420 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 微软雅黑;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.inner-container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  width: 170px;
+  height: 46px;
+  border-radius: 3px;
+  background: #5bca92;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 46px;
+}
+.header {
+  background: white;
+  border-top: 4px solid #58c78f;
+}
+.header .logo-area {
+  height: 123px;
+}
+.header .logo-area .logo {
+  width: 300px;
+  height: 60px;
+  margin-top: 30px;
+  float: left;
+  background: url("../../img/logo.png") no-repeat;
+}
+.header .logo-area .contact {
+  width: 180px;
+  height: 60px;
+  margin-top: 30px;
+  float: right;
+  background: url("../../img/contact.png") no-repeat;
+}
+.header .nav {
+  background: #58c78f;
+}
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.header .nav ul li {
+  float: left;
+  width: 140px;
+  text-align: center;
+}
+.header .nav ul li a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+.header .nav ul li.active {
+  background: #11a154;
+}
+.footer {
+  margin-top: -315px;
+  border-top: 4px solid #58c78f;
+}
+.footer .footer-top {
+  height: 211px;
+  background: #31343e;
+  border-bottom: 1px solid #acaeb3;
+}
+.footer .footer-top .inner-container {
+  padding-left: 300px;
+  width: 800px;
+}
+.footer .footer-top .logo {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  float: left;
+  background: url("../../img/logo.png") no-repeat;
+}
+.footer .footer-top .links {
+  color: white;
+  float: left;
+  padding: 30px 0 0 80px;
+}
+.footer .footer-top .links .link-group {
+  float: left;
+  margin-right: 40px;
+}
+.footer .footer-top .links .link-group .link-head {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+}
+.footer .footer-top .links .link-group .link-container {
+  min-width: 100px;
+}
+.footer .footer-top .links .link-group .link-container.two-column {
+  width: 200px;
+}
+.footer .footer-top .links .link-group .link-container.two-column .link-item {
+  float: left;
+}
+.footer .footer-top .links .link-group .link-container .link-item {
+  min-width: 100px;
+  line-height: 24px;
+}
+.footer .footer-top .links .link-group .link-container .link-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.footer .footer-bottom {
+  height: 104px;
+}
+.footer .footer-bottom .content {
+  padding-top: 20px;
+}
+.footer .footer-bottom .content p {
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+.container .main {
+  padding-bottom: 315px;
+}
+.container .main .page-title {
+  height: 110px;
+  line-height: 110px;
+  font-size: 26px;
+  color: #57c790;
+}
+.container .main .page-title span {
+  color: #646464;
+  font-size: 20px;
+}
+.container .main .content {
+  padding: 0 0 40px 200px;
+}
+.container .main .content .left {
+  float: left;
+  width: 200px;
+  margin-left: -200px;
+}
+.container .main .content .left .side-bar .side-bar-head {
+  height: 87px;
+  padding-top: 45px;
+  outline: 1px solid #eeeeee;
+  background: url("../../img/小导航.jpg") no-repeat;
+}
+.container .main .content .left .side-bar .side-bar-head .side-bar-head-title {
+  height: 75px;
+  line-height: 75px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding-left: 12px;
+  display: none;
+}
+.container .main .content .left .side-bar .side-bar-links {
+  margin: 6px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.container .main .content .left .side-bar .side-bar-links li {
+  height: 50px;
+  padding-left: 24px;
+  background: #88d8b0;
+  margin-top: 2px;
+}
+.container .main .content .left .side-bar .side-bar-links li.active {
+  background: #57c790;
+}
+.container .main .content .left .side-bar .side-bar-links li a {
+  line-height: 50px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.container .main .content .right {
+  margin-left: 47px;
+}
+.container .main .content .right .crumbs {
+  font-size: 14px;
+  color: #333333;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.container .main .content .right .crumbs a {
+  text-decoration: none;
+  color: #5bca92;
+}
+.container .main .content .right .main-content > img {
+  max-width: 100%;
+}
+.container .main .content .right .main-content p {
+  font-size: 16px;
+  line-height: 30px;
+  text-indent: 2em;
+}
+.container .main .content .right .main-content p.sub-title {
+  font-size: 20px;
+  color: #5bca92;
+  text-indent: 0;
+}
+.container .main .content .right .main-content p.sub-title-small {
+  font-size: 16px;
+  color: #5bca92;
+  text-indent: 0;
+}
+.container .main .content .right .main-content ul li {
+  line-height: 30px;
+}
+.container .main .content .right .main-content .img-group a {
+  float: left;
+  margin-right: 10px;
+}
+.container .main .content .right .main-content .table {
+  margin-top: 20px;
+}
+.container .main .content .right .main-content .table .table-title {
+  text-align: center;
+  font-size: 24px;
+  color: #5bca92;
+  line-height: 55px;
+}
+.container .main .content .right .main-content .table table {
+  width: 100%;
+  border: 1px solid #efefef;
+}
+.container .main .content .right .main-content .table table th,
+.container .main .content .right .main-content .table table td {
+  border: 1px solid #efefef;
+}
+.container .main .content .right .main-content .table table tr {
+  min-height: 48px;
+}
+.container .main .content .right .main-content .table table tr.center td {
+  text-align: center;
+  padding: 0;
+  line-height: 48px;
+}
+.container .main .content .right .main-content .table table th {
+  font-size: 18px;
+  color: #5bca92;
+  text-align: center;
+  font-weight: normal;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+.container .main .content .right .main-content .table table td {
+  font-size: 14px;
+  padding: 15px;
+  line-height: 24px;
+}
+.container .main .content .right .main-content .table table td.no-wrap {
+  white-space: nowrap;
+}
+.container .main .content .right .main-content .table .table-tip p {
+  font-weight: bold;
+  text-indent: 0;
+  margin: 10px 0;
+}
+.container .main .content .right .main-content .table .table-tip ol {
+  margin: 0;
+  padding: 0 0 0 22px;
+}
+.container .main .content .right .main-content .table .table-tip ol li {
+  line-height: 24px;
+}
+.container .main .content .right .main-content .tab .tab-items {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #efefef;
+}
+.container .main .content .right .main-content .tab .tab-items a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 20px 0 0;
+  color: #333333;
+}
+.container .main .content .right .main-content .tab .tab-items a.active {
+  color: #5bca92;
+}
+.container .main .content .right .main-content .tab .tab-box > div {
+  display: none;
+}
+.container .main .content .right .main-content .tab .tab-box > div.active {
+  display: block;
+}
+.container .main .content .right .main-content .tab .tab-box p {
+  text-indent: 0;
+}
+.container .main .content .right .main-content .doc-switcher .current {
+  height: 300px;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item {
+  display: none;
+  position: relative;
+  padding-left: 260px;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item.active {
+  display: block;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item .doc-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 240px;
+  outline: 1px solid #eeeeee;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item .doc-info .title-area {
+  height: 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item .doc-info .title-area .c-name {
+  font-size: 22px;
+  color: #5bca92;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item .doc-info .title-area .c-name .title {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item .doc-info .desc {
+  line-height: 24px;
+  font-size: 16px;
+  color: #333333;
+  padding: 20px 0;
+}
+.container .main .content .right .main-content .doc-switcher .current .doc-item .doc-info .btn-area .btn {
+  margin-right: 20px;
+}
+.container .main .content .right .main-content .doc-switcher .doc-tab {
+  margin-top: 30px;
+  height: 200px;
+}
+.container .main .content .right .main-content .doc-switcher .doc-tab .tab-item {
+  float: left;
+  height: 200px;
+  width: 160px;
+  margin-right: 35px;
+  position: relative;
+  outline: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.container .main .content .right .main-content .doc-switcher .doc-tab .tab-item.active {
+  outline: 4px solid #5bca92;
+}
+.container .main .content .right .main-content .doc-switcher .doc-tab .tab-item:last-child {
+  margin-right: 0;
+}
+.container .main .content .right .main-content .doc-switcher .doc-tab .tab-item .tab-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 43px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+.container .main .content .right .main-content .img-slider {
+  margin: 20px 0;
+}
+.container .main .content .right .main-content .img-slider .img-item-container {
+  height: 204px;
+}
+.container .main .content .right .main-content .img-slider .img-item-container img {
+  opacity: .6;
+  width: 140px;
+  height: 92px;
+  margin: 0 10px 10px 0;
+  outline: 1px solid #eeeeee;
+  float: left;
+  cursor: pointer;
+}
+.container .main .content .right .main-content .img-slider .img-item-container img.active {
+  opacity: 1;
+}
+.container .main .content .right .main-content .img-slider .current {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.container .main .content .right .main-content .img-slider .current img {
+  max-width: 100%;
+}
