@@ -35,6 +35,7 @@
         float: left;
         width: 140px;
         text-align: center;
+        position: relative;
         a {
           font-size: 16px;
           color: white;
@@ -42,8 +43,46 @@
           display: block;
           height: 100%;
         }
+
+
+        .expand-menu {
+          position: absolute;
+          z-index: 1000;
+          background-color: rgba(52, 179, 114, 0.8);
+          font-size: 14px;
+          width: 100%;
+          left: 0;
+          top: 50px;
+          display: none;
+
+
+          a {
+            display: block;
+            text-align: center;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+
+            &:hover {
+              background: #34b372;
+            }
+          }
+        }
         &.active {
           background: #11a154;
+
+          &:hover {
+            background: #11a154;
+
+
+          }
+        }
+
+        &:hover {
+          background: #34b372;
+           .expand-menu {
+              display: block;
+            }
         }
       }
     }

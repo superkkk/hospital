@@ -48,10 +48,13 @@
   line-height: 24px;
 }
 .footer .footer-top .links .link-group .link-container .link-item a {
-  color: white;
+  color: #cad1da;
   text-decoration: none;
   font-size: 14px;
   white-space: nowrap;
+}
+.footer .footer-top .links .link-group .link-container .link-item a:hover {
+  color: #e8ebef;
 }
 .footer .footer-bottom {
   height: 104px;

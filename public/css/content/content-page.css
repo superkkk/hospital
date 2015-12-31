@@ -75,6 +75,7 @@ body {
   float: left;
   width: 140px;
   text-align: center;
+  position: relative;
 }
 .header .nav ul li a {
   font-size: 16px;
@@ -83,8 +84,37 @@ body {
   display: block;
   height: 100%;
 }
+.header .nav ul li .expand-menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(52, 179, 114, 0.8);
+  font-size: 14px;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  display: none;
+}
+.header .nav ul li .expand-menu a {
+  display: block;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+.header .nav ul li .expand-menu a:hover {
+  background: #34b372;
+}
 .header .nav ul li.active {
   background: #11a154;
+}
+.header .nav ul li.active:hover {
+  background: #11a154;
+}
+.header .nav ul li:hover {
+  background: #34b372;
+}
+.header .nav ul li:hover .expand-menu {
+  display: block;
 }
 .footer {
   margin-top: -315px;
@@ -136,10 +166,13 @@ body {
   line-height: 24px;
 }
 .footer .footer-top .links .link-group .link-container .link-item a {
-  color: white;
+  color: #cad1da;
   text-decoration: none;
   font-size: 14px;
   white-space: nowrap;
+}
+.footer .footer-top .links .link-group .link-container .link-item a:hover {
+  color: #e8ebef;
 }
 .footer .footer-bottom {
   height: 104px;
