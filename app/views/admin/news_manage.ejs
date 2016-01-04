@@ -1,0 +1,11 @@
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <div class="container">
+    <div class="op-line">
+      <button data-toggle="modal" data-target="#NewsModal" data-op="add" class="btn-primary btn">+新增</button>
+    </div>
+    <div id="news-manage-table">
+      <% include news_table.ejs%>
+    </div>
+  </div>
+</div>
+<% include news_modal.ejs%>

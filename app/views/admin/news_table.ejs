@@ -1,0 +1,19 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <td class="title">标题</td>
+    <td class="op">操作</td>
+  </tr>
+  </thead>
+  <tbody>
+  <% for (var i = 0; i < news.length; i++) {%>
+  <tr class="news">
+    <td><%= news[i].title%></td>
+    <td>
+      <a href="#" data-toggle="modal" data-target="#NewsModal" data-op="edit" data-id="<%=news[i]._id.toString()%>" class="edit">编辑</a>
+      <a href="#" data-id="<%=news[i]._id.toString()%>" class="delete">删除</a>
+    </td>
+  </tr>
+  <% } %>
+  </tbody>
+</table>
