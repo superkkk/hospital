@@ -201,6 +201,12 @@ body {
 .container .main .content {
   padding: 0 0 40px 200px;
 }
+.container .main .content.full {
+  padding: 0 0 40px 0px;
+}
+.container .main .content.full .right {
+  margin-left: 0;
+}
 .container .main .content .left {
   float: left;
   width: 200px;
@@ -273,6 +279,43 @@ body {
 }
 .container .main .content .right .main-content ul li {
   line-height: 30px;
+}
+.container .main .content .right .main-content .link-list a {
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: #0072d7;
+  line-height: 24px;
+}
+.container .main .content .right .main-content .link-list a:hover {
+  text-decoration: underline;
+}
+.container .main .content .right .main-content .block {
+  width: 450px;
+  float: left;
+  margin-bottom: 30px;
+}
+.container .main .content .right .main-content .block.left-side {
+  margin-right: 100px;
+}
+.container .main .content .right .main-content .block .block-title {
+  font-size: 16px;
+  color: #5bca92;
+  line-height: 30px;
+}
+.container .main .content .right .main-content .block .block-content {
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.container .main .content .right .main-content .block .block-btn {
+  font-size: 16px;
+  color: white;
+  background: #5bca92;
+  padding: 20px 40px;
+  display: inline-block;
+  text-decoration: none;
 }
 .container .main .content .right .main-content .img-group a {
   float: left;
@@ -450,6 +493,26 @@ body {
   width: 100%;
   text-align: center;
   vertical-align: middle;
+  position: relative;
+}
+.container .main .content .right .main-content .img-slider .current .arrow {
+  height: 76px;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 212px;
+  opacity: 0.7;
+}
+.container .main .content .right .main-content .img-slider .current .arrow:hover {
+  opacity: 1;
+}
+.container .main .content .right .main-content .img-slider .current .arrow.prev {
+  background: url("/img/arrow3.png") no-repeat;
+  left: 10px;
+}
+.container .main .content .right .main-content .img-slider .current .arrow.next {
+  background: url("/img/arrow3.png") -40px 0 no-repeat;
+  right: 10px;
 }
 .container .main .content .right .main-content .img-slider .current img {
   max-width: 100%;

@@ -1,54 +1,57 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/css/content/normalize.css">
-    <link rel="stylesheet" href="/css/content/content-page.css">
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/content/normalize.css">
+  <link rel="stylesheet" href="/css/content/content-page.css">
 </head>
 <body>
 <div class="container">
-<% include ../../common/header2.ejs %>
-    <div class="main">
-        <div class="inner-container">
-            <div class="page-title">
-                医院介绍 <span class="sub">MATERNITY CENTER</span>
-            </div>
+  <% include ../../common/header2.ejs %>
+  <div class="main">
+    <div class="inner-container">
+      <div class="page-title">
+        医院介绍 <span class="sub">MATERNITY CENTER</span>
+      </div>
 
-            <div class="content clearfix">
-                <div class="left">
-                  <% include ../../common/sidebar_yyjs.ejs%>
+      <div class="content clearfix">
+        <div class="left">
+          <% include ../../common/sidebar_yyjs.ejs %>
 
-                </div>
-                <div class="right">
-                    <div class="crumbs">
-                        <a href="/">首页</a> >
-                        <a href="/category/<%= nav %>">医院介绍</a> >
-                        高端设备
-                    </div>
-                    <div class="main-content">
-                      <div class="img-slider">
-                          <div class="img-item-container">
-                              <img class="active" src="/img/产房.JPG"  alt="">
-                              <img src="/img/护士站.JPG"  alt="">
-                              <img src="/img/露天阳台.JPG"  alt="">
-                              <img src="/img/输液大厅.JPG"  alt="">
-                              <img src="/img/手术室.JPG"  alt="">
-                              <img src="/img/医院大厅.JPG"  alt="">
-                              <img src="/img/医生值班室.JPG"  alt="">
-                              <img src="/img/孕妇病房1.JPG"  alt="">
-                              <img src="/img/孕妇病房2.JPG"  alt="">
-                              <img src="/img/孕妇瑜伽中心.JPG"  alt="">
-                          </div>
-                          <div class="current">
-                              <img src="/img/产房.JPG" alt="">
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div class="right">
+          <div class="crumbs">
+            <a href="/">首页</a> >
+            <a href="/category/<%= nav %>">医院介绍</a> >
+            高端设备
+          </div>
+          <div class="main-content">
+            <div class="img-slider">
+              <div class="img-item-container">
+                <img class="active" src="/img/产房.JPG" data-title="产房" data-index="1" alt="">
+                <img src="/img/护士站.JPG" data-title="护士站" data-index="2" alt="">
+                <img src="/img/露天阳台.JPG" data-title="露天阳台" data-index="3" alt="">
+                <img src="/img/输液大厅.JPG" data-title="输液大厅" data-index="4" alt="">
+                <img src="/img/手术室.JPG" data-title="手术室" data-index="5" alt="">
+                <img src="/img/医院大厅.JPG" data-title="医院大厅" data-index="6" alt="">
+                <img src="/img/医生值班室.JPG" data-title="医院值班室" data-index="7" alt="">
+                <img src="/img/孕妇病房1.JPG" data-title="孕妇病房" data-index="8" alt="">
+                <img src="/img/孕妇病房2.JPG" data-title="孕妇病房" data-index="9" alt="">
+                <img src="/img/孕妇瑜伽中心.JPG" data-title="孕妇瑜伽中心" data-index="10" alt="">
+              </div>
+              <div class="current">
+                <img src="/img/产房.JPG" data-index="1" alt="">
+                <div class="arrow prev"></div>
+                <div class="arrow next"></div>
+                <div class="title">产房</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <% include ../../common/footer2.ejs %>
 <script type="text/javascript" src="/js/content/jquery-1.11.1.min.js"></script>

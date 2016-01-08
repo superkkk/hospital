@@ -6,12 +6,22 @@ router.get('/', function(req, res, next){
   home.homePage(req, res, next);
 });
 
+router.get('/category/:name/:sub_name/:s_sub_name', function(req, res, next) {
+    res.render('category/'+ req.params.name + '/' + req.params.s_sub_name + '.ejs', {
+      title: '德阳锦江妇科医院',
+      nav: req.params.name,
+      subNav: req.params.sub_name
+    });
+});
+
 router.get('/category/:name/:sub_name', function(req, res, next) {
-  res.render('category/'+ req.params.name + '/' + req.params.sub_name + '.ejs', {
-    title: '德阳锦江妇科医院',
-    nav: req.params.name,
-    subNav: req.params.sub_name
-  });
+
+    res.render('category/'+ req.params.name + '/' + req.params.sub_name + '.ejs', {
+      title: '德阳锦江妇科医院',
+      nav: req.params.name,
+      subNav: req.params.sub_name
+    });
+
 });
 
 router.get('/category/:name', function(req, res, next) {
@@ -21,7 +31,7 @@ router.get('/category/:name', function(req, res, next) {
          _tmp = 'yinxiangjinjiang';
           break;
     case 'keshijieshao':
-          _tmp = 'chankejieshao';
+          _tmp = 'keshijieshao';
           break;
   }
 
