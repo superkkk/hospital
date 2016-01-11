@@ -84,6 +84,9 @@ body {
   display: block;
   height: 100%;
 }
+.header .nav ul li a.no {
+  cursor: default;
+}
 .header .nav ul li .expand-menu {
   position: absolute;
   z-index: 1000;
@@ -277,11 +280,11 @@ body {
   color: #5bca92;
   text-indent: 0;
 }
-.container .main .content .right .main-content a {
+.container .main .content .right .main-content p > a {
   color: #0072d7;
   text-decoration: none;
 }
-.container .main .content .right .main-content a:hover {
+.container .main .content .right .main-content p > a:hover {
   text-decoration: underline;
 }
 .container .main .content .right .main-content ul li {
@@ -496,7 +499,7 @@ body {
 }
 .container .main .content .right .main-content .img-slider .current {
   margin-top: 20px;
-  height: 500px;
+  height: 502px;
   width: 100%;
   text-align: center;
   vertical-align: middle;
