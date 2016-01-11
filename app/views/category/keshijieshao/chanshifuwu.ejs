@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/css/content/normalize.css">
-    <link rel="stylesheet" href="/css/content/content-page.css">
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/content/normalize.css">
+  <link rel="stylesheet" href="/css/content/content-page.css">
 </head>
 <body>
 <div class="container">
-<% include ../../common/header2.ejs %>
+  <% include ../../common/header2.ejs %>
   <div class="main">
     <div class="inner-container">
       <div class="page-title">
@@ -17,7 +17,7 @@
 
       <div class="content clearfix">
         <div class="left">
-          <% include ../../common/sidebar_ksjs.ejs%>
+          <% include ../../common/sidebar_ksjs.ejs %>
 
         </div>
         <div class="right">
@@ -48,7 +48,7 @@
                 <tbody>
                 <tr>
                   <td class="no-wrap">
-                   收费
+                    收费
                   </td>
                   <td>
                     特价房 xx元
@@ -114,33 +114,6 @@
               </div>
             </div>
 
-            <div class="table">
-              <div class="table-title">
-                剖宫产套餐
-              </div>
-              <table>
-                <thead>
-                <tr>
-                  <th>
-                    特价房
-                  </th>
-                  <th>
-                    小单间剖宫产套餐（五晚）
-                  </th>
-                  <th>
-                    大单间剖宫产套餐（五晚）
-                  </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="center">
-                  <td>8588元</td>
-                  <td>11866元</td>
-                  <td>13660元</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
 
             <div class="table">
               <div class="table-title">
@@ -158,6 +131,16 @@
                 </tr>
                 </thead>
                 <tbody>
+                <tr>
+                  <td class="no-wrap">收费</td>
+                  <td>
+                    特价房 8588元
+                    <br>
+                    小单间剖宫产套餐（五晚） 11866元
+                    <br>
+                    大单间剖宫产套餐（五晚） 13660元
+                  </td>
+                </tr>
                 <tr>
                   <td class="no-wrap">住宿及膳食</td>
                   <td>五晚房费/ 产妇五日营养膳食/ 一日五顿营养餐（产妇一人）/td>
@@ -221,9 +204,9 @@
         </div>
       </div>
     </div>
-</div>
-<% include ../../common/footer2.ejs %>
-<script type="text/javascript" src="/js/content/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="/js/content/common.js"></script>
+  </div>
+  <% include ../../common/footer2.ejs %>
+  <script type="text/javascript" src="/js/content/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="/js/content/common.js"></script>
 </body>
 </html>

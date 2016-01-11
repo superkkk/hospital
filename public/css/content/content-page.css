@@ -277,6 +277,13 @@ body {
   color: #5bca92;
   text-indent: 0;
 }
+.container .main .content .right .main-content a {
+  color: #0072d7;
+  text-decoration: none;
+}
+.container .main .content .right .main-content a:hover {
+  text-decoration: underline;
+}
 .container .main .content .right .main-content ul li {
   line-height: 30px;
 }
@@ -516,4 +523,14 @@ body {
 }
 .container .main .content .right .main-content .img-slider .current img {
   max-width: 100%;
+}
+.container .main .content .right .main-content .img-slider .current .title {
+  height: 50px;
+  line-height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
